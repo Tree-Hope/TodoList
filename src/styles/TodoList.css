@@ -1,0 +1,19 @@
+.todolist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todolist > h3 {
+  color: #ffafcc;
+}
+
+.todolist > input {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px;
+}
+
+.todolist > input:focus {
+  outline: none;
+}

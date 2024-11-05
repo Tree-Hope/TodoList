@@ -1,0 +1,10 @@
+body {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

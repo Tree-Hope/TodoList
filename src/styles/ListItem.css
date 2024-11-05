@@ -1,0 +1,20 @@
+.listitem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.listitem > input {
+  width: 20px;
+}
+
+.listitem > .content {
+  flex: 1;
+}
+
+.listitem > button {
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+}
