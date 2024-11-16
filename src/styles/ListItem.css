@@ -13,6 +13,10 @@
   flex: 1;
 }
 
+.listitem > .date {
+  font-size: 14px;
+}
+
 .listitem > button {
   border: none;
   padding: 6px;
