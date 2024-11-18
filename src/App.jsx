@@ -25,7 +25,7 @@ const reducer = (state, action) => {
       return [action.data, ...state];
     case "UPDATE":
       return state.map((item) =>
-        action.id === item.id ? { ...item, isDone: item.isDone } : item
+        action.id === item.id ? { ...item, isDone: !item.isDone } : item
       );
     case "DELETE":
       return state.filter((item) =>
@@ -43,14 +43,14 @@ function App() {
   const [inputData, dispatch] = useReducer(reducer, data);
   const idRef = useRef(3);
 
-  const onCreate = ({ isDone, content, createdDate }) => {
+  const onCreate = (content) => {
     dispatch({
       type: "CREATE",
       data: {
         id: idRef.current++,
-        isDone,
+        isDone: false,
         content,
-        createdDate
+        createdDate: new Date().getTime()
       }
     });
   };
